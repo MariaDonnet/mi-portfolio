@@ -20,36 +20,89 @@
     <title>Portfolio Maria Soledad Donnet</title>
   </head>
 
-  <body>
+  <body class="body">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg px-4">
         <div class="container-fluid">
           <a class="navbar-brand"><img src="./assets/logo-redondo.png" alt="Bootstrap" width="90" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav d-flex justify-content-end w-100">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Habilidades</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Certificados</a>
+                <a class="nav-link" href="#certificados">Certificaciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
+    <main>
+      <!-- Section bienvenida -->
+      <section class="section-hero">
+        <div class="hero-text">
+          <h1>Bienvenidos a mi portfolio!</h1>
+          <h2>Mi nombre es Maria Soledad Donnet</h2>
+          <h2>Desarrolladora web en JavaScript, especializandome en React.js y Product Manager apasionada por el mundo de la tecnología.</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dicta reprehenderit itaque officia aspernatur nobis! Facere voluptate repudiandae nam ducimus reiciendis. Aspernatur
+            eveniet minima facere magni adipisci voluptas eius blanditiis?
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/imagen-presentacion.png" alt="Mujer" />
+        </div>
+      </section>
+
+      <!-- Section Proyectos-->
+      <section class="section-projects" id="proyectos">
+        <div class="projects_div">
+          <div class="project_card">
+            <a href="#"><img src="./assets/portfolio.png" alt="" /></a>
+            <h4>Mi portfolio</h4>
+            <p>Creación de un portfolio personal utilizando HTML, CSS y libreria de Boostrap.</p>
+          </div>
+
+          <div class="project_card">
+            <a href="#"><img src="./assets/centro-holistico-plumas.png" alt="" /></a>
+            <h4>Centro Holístico Plumas</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="project_card">
+            <a href="#"><img src="./assets/peluqueria-md.png" alt="" /></a>
+            <h4>Peluquería MD</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+          </div>
+
+          <div class="project_card">
+            <a href="#"><img src="./assets/flippa-peru.png" alt="" /></a>
+            <h4>Flippa Perú</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+          </div>
+
+          <div class="project_card">
+            <a href="#"><img src="./assets/simulador-de-gastos.png" alt="" /></a>
+            <h4>Simulador de Gastos</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing..</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Boostrap javascript-->
     <script
