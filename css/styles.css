@@ -21,6 +21,16 @@
 color: #5d4b8b;
 text-decoration: underline;
 }
+.subtitle {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #8e44ad;
+  text-shadow: 1px 1px 4px rgba(142, 68, 173, 0.25); 
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
 .section-hero{
   display: flex;
   flex-wrap: wrap;
@@ -28,15 +38,27 @@ text-decoration: underline;
 	justify-content: center;
 	align-items: center;
   gap: 50px;
-  width: 80%;
+  width: 70%;
   margin: 4rem auto;
 }
 .hero-text {
   flex: 1 1 300px;
   min-width: 300px;
 }
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #5d4b8b;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
 .hero-image img{
-max-width: 400px;
+max-width: 380px;
 }
 .tech-slider{
   overflow: hidden;
@@ -98,8 +120,81 @@ max-width: 400px;
 }
 .project_card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
 }  
+.section-certificaciones {
+  width: 90%;
+  margin: 6rem auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f5ff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(93, 75, 139, 0.1);
+}
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+.certificate-card {
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(93, 75, 139, 0.08);
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 260px;
+}
+.certificate-card img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.certificate-card:hover img {
+  filter: grayscale(0%);
+  border-color: #5d4b8b;
+}
+.certificate-card p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #333;
+}
+.section-contact {
+  width: 80%;
+  margin: 6rem auto 8rem auto;
+  text-align: center;
+  color: #5d4b8b;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  align-items: center;
+}
+.social-link img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.social-link:hover img {
+  transform: scale(1.1);
+}
+footer {
+  background-color: #dcd7f8;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-weight: 600;
+  color: #000000;
+  box-shadow: 0 -2px 4px rgba(93, 75, 139, 0.1);
+  font-size: 18px;
+}
