@@ -17,9 +17,15 @@
   transition: color 0.3s ease;
   font-size: 18px;
 }
+.navbar .nav-link {
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
 .navbar .nav-link:hover{
 color: #5d4b8b;
 text-decoration: underline;
+}
+.navbar-collapse{
+  text-align: end;
 }
 .subtitle {
   font-size: 2.3rem;
@@ -197,4 +203,39 @@ footer {
   color: #000000;
   box-shadow: 0 -2px 4px rgba(93, 75, 139, 0.1);
   font-size: 18px;
+}
+@media (max-width: 480px) {
+.section-hero{
+  gap: 20px;
+  width: 80%;
+}
+.hero-image img{
+max-width: 200px;
+}
+.tech-slide {
+  margin: 1rem 2rem 0 2rem;
+}
+.tech-slide img {
+  height: 50px;
+  filter: grayscale(0);
+}
+.section-projects {
+  padding: 2rem 0.5rem;
+}
+.section-certificaciones{
+  margin: 2rem auto;
+}
+.section-contact {
+  margin: 2.5rem auto;
+}
+.social-icons {
+  gap: 2.5rem;
+}
+footer {
+  font-weight: 500;
+  font-size: 14px;
+}
+footer p{
+  margin: 0 1rem;
+}
 }
